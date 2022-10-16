@@ -1,5 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
+import About from './components/About';
+import Pricing from './components/Blog';
+import Contact from './components/Contact';
 import Home from './components/Home';
 import Login from './components/Login';
 import Profile from './components/Profile';
@@ -33,6 +36,18 @@ function App() {
         {
           path: '/register',
           element: <Register/>
+        },
+        {
+          path: '/pricing',
+          element: <PrivateRoute><Pricing/></PrivateRoute>
+        },
+        {
+          path: '/about',
+          element: <About/>
+        },
+        {
+          path: '/contact',
+          element: <Contact/>
         }
       ]
     }

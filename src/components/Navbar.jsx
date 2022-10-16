@@ -73,13 +73,13 @@ export default function Navbar() {
                 <Link to="/profile">Profile</Link>
               </li>
               <li className="text-white hover:text-indigo-200">
-                <Link to="/">Blog</Link>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li className="text-white hover:text-indigo-200">
-                <Link to="/">About US</Link>
+                <Link to="/about">About US</Link>
               </li>
               <li className="text-white hover:text-indigo-200">
-                <Link to="/">Contact US</Link>
+                <Link to="/contact">Contact US</Link>
               </li>
               <li className="text-white hover:text-indigo-200">
                 {user?.email && <Link to="/">Welcome, {user.email}</Link>}
